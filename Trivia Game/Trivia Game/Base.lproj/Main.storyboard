@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Opening Buttons-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OpeningButtons" customModule="Trivia_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARE YOU READY?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUf-XU-mKg">
+                                <rect key="frame" x="20" y="74" width="374" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="0lS-Bu-csD"/>
+                                    <constraint firstAttribute="height" constant="68" id="kvF-ug-gpO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2G-ME-mtn">
+                                <rect key="frame" x="60" y="182" width="294" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NyW-hP-VKa"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="idh-bd-gOM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                <state key="normal" title="MUSIC">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="musicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXF-Sz-Zb9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnF-in-7TV">
+                                <rect key="frame" x="60" y="322" width="294" height="100"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Pl3-do-h2c"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="RGy-Sz-C03"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                <state key="normal" title="ANIMALS">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="animalsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPN-Nm-01G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9t-fu-ydC">
+                                <rect key="frame" x="60" y="462" width="294" height="100"/>
+                                <color key="backgroundColor" red="0.79835724829999999" green="0.40262922890000002" blue="0.79636473169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="DF5-Pn-czp"/>
+                                    <constraint firstAttribute="height" constant="100" id="gSQ-FD-5rl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                <state key="normal" title="DAD JOKES">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dadjokesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jrq-oz-peb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOKE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1k-7X-bhV">
+                                <rect key="frame" x="30" y="612" width="354" height="220"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="htv-gB-zjI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90942327524369282" blue="0.98517925463487932" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="b2G-ME-mtn" firstAttribute="top" secondItem="KUf-XU-mKg" secondAttribute="bottom" constant="40" id="32M-ko-WZX"/>
+                            <constraint firstItem="mnF-in-7TV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="5u8-Qi-UUe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b2G-ME-mtn" secondAttribute="trailing" constant="60" id="6YO-1j-dBi"/>
+                            <constraint firstItem="b2G-ME-mtn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="6mm-pM-HkY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mnF-in-7TV" secondAttribute="trailing" constant="60" id="7IT-cS-pXn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9t-fu-ydC" secondAttribute="trailing" constant="60" id="Cz3-im-p0d"/>
+                            <constraint firstItem="F9t-fu-ydC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="EuH-ph-v8w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O1k-7X-bhV" secondAttribute="trailing" constant="30" id="FzT-Dw-Jxf"/>
+                            <constraint firstItem="O1k-7X-bhV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Nnl-H5-5T1"/>
+                            <constraint firstItem="KUf-XU-mKg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="TX8-Ot-hvz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O1k-7X-bhV" secondAttribute="bottom" constant="30" id="YDE-I6-HvJ"/>
+                            <constraint firstItem="mnF-in-7TV" firstAttribute="top" secondItem="b2G-ME-mtn" secondAttribute="bottom" constant="40" id="YoS-pR-Pw4"/>
+                            <constraint firstItem="KUf-XU-mKg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iV5-c1-Iyx"/>
+                            <constraint firstItem="O1k-7X-bhV" firstAttribute="top" secondItem="F9t-fu-ydC" secondAttribute="bottom" constant="50" id="nd9-Li-8tx"/>
+                            <constraint firstItem="F9t-fu-ydC" firstAttribute="top" secondItem="mnF-in-7TV" secondAttribute="bottom" constant="40" id="zDJ-ku-SqD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="jokeDisplay" destination="O1k-7X-bhV" id="vg6-aW-4GG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="127.90178571428571"/>
+        </scene>
+    </scenes>
+</document>
